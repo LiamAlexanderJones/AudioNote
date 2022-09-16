@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F10C1F1B27BE9BDF00985EEA /* NotificationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C1F1A27BE9BDF00985EEA /* NotificationManagerTests.swift */; };
+		F11145822785C23D00179FFA /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11145812785C23D00179FFA /* CreateNoteView.swift */; };
+		F114010C27A0148700A8D915 /* TimeInterval+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114010B27A0148700A8D915 /* TimeInterval+.swift */; };
+		F114010F27A0284F00A8D915 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114010E27A0284F00A8D915 /* NotificationManager.swift */; };
+		F13A069927B14E5E00DC8FDE /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A069827B14E5E00DC8FDE /* Collection+.swift */; };
+		F1438904278714AB007BE9DA /* NoteManagedObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1438903278714AB007BE9DA /* NoteManagedObject+.swift */; };
+		F151EBF6279052E1002A4517 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F151EBF5279052E1002A4517 /* NoteView.swift */; };
+		F166442E279078A7002DA11D /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F166442D279078A7002DA11D /* NoteDetailView.swift */; };
+		F1D19A10279D8AB400AEAC09 /* IntensityProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D19A0F279D8AB400AEAC09 /* IntensityProgressView.swift */; };
+		F1D2EA00278318020084A0CA /* AudioNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2E9FF278318020084A0CA /* AudioNoteApp.swift */; };
+		F1D2EA02278318020084A0CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2EA01278318020084A0CA /* ContentView.swift */; };
+		F1D2EA04278318080084A0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D2EA03278318080084A0CA /* Assets.xcassets */; };
+		F1D2EA07278318080084A0CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D2EA06278318080084A0CA /* Preview Assets.xcassets */; };
+		F1D2EA09278318080084A0CA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2EA08278318080084A0CA /* Persistence.swift */; };
+		F1D2EA0C278318080084A0CA /* AudioNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1D2EA0A278318080084A0CA /* AudioNote.xcdatamodeld */; };
+		F1D2EA16278318080084A0CA /* AudioManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2EA15278318080084A0CA /* AudioManagerTests.swift */; };
+		F1D2EA20278318080084A0CA /* AudioNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2EA1F278318080084A0CA /* AudioNoteUITests.swift */; };
+		F1D2EA22278318080084A0CA /* AudioNoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2EA21278318080084A0CA /* AudioNoteUITestsLaunchTests.swift */; };
+		F1D2EA31278318A00084A0CA /* RecordAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2EA30278318A00084A0CA /* RecordAudioView.swift */; };
+		F1D2EA332783221D0084A0CA /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2EA322783221D0084A0CA /* AudioManager.swift */; };
+		F1D472D627A85DA50060D782 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D472D527A85DA50060D782 /* View+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1D2EA12278318080084A0CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1D2E9F4278318020084A0CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1D2E9FB278318020084A0CA;
+			remoteInfo = AudioNote;
+		};
+		F1D2EA1C278318080084A0CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1D2E9F4278318020084A0CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1D2E9FB278318020084A0CA;
+			remoteInfo = AudioNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F10C1F1A27BE9BDF00985EEA /* NotificationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerTests.swift; sourceTree = "<group>"; };
+		F11145812785C23D00179FFA /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
+		F114010B27A0148700A8D915 /* TimeInterval+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+.swift"; sourceTree = "<group>"; };
+		F114010E27A0284F00A8D915 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		F13A069827B14E5E00DC8FDE /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
+		F1438903278714AB007BE9DA /* NoteManagedObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteManagedObject+.swift"; sourceTree = "<group>"; };
+		F151EBF5279052E1002A4517 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		F166442D279078A7002DA11D /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		F1D19A0F279D8AB400AEAC09 /* IntensityProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensityProgressView.swift; sourceTree = "<group>"; };
+		F1D2E9FC278318020084A0CA /* AudioNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D2E9FF278318020084A0CA /* AudioNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioNoteApp.swift; sourceTree = "<group>"; };
+		F1D2EA01278318020084A0CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1D2EA03278318080084A0CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1D2EA06278318080084A0CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1D2EA08278318080084A0CA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F1D2EA0B278318080084A0CA /* AudioNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AudioNote.xcdatamodel; sourceTree = "<group>"; };
+		F1D2EA11278318080084A0CA /* AudioNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D2EA15278318080084A0CA /* AudioManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerTests.swift; sourceTree = "<group>"; };
+		F1D2EA1B278318080084A0CA /* AudioNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D2EA1F278318080084A0CA /* AudioNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioNoteUITests.swift; sourceTree = "<group>"; };
+		F1D2EA21278318080084A0CA /* AudioNoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioNoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1D2EA30278318A00084A0CA /* RecordAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioView.swift; sourceTree = "<group>"; };
+		F1D2EA322783221D0084A0CA /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		F1D472D527A85DA50060D782 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1D2E9F9278318020084A0CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D2EA0E278318080084A0CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D2EA18278318080084A0CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F114010D27A0283700A8D915 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F1D2EA322783221D0084A0CA /* AudioManager.swift */,
+				F114010E27A0284F00A8D915 /* NotificationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F1D2E9F3278318020084A0CA = {
+			isa = PBXGroup;
+			children = (
+				F1D2E9FE278318020084A0CA /* AudioNote */,
+				F1D2EA14278318080084A0CA /* AudioNoteTests */,
+				F1D2EA1E278318080084A0CA /* AudioNoteUITests */,
+				F1D2E9FD278318020084A0CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1D2E9FD278318020084A0CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1D2E9FC278318020084A0CA /* AudioNote.app */,
+				F1D2EA11278318080084A0CA /* AudioNoteTests.xctest */,
+				F1D2EA1B278318080084A0CA /* AudioNoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1D2E9FE278318020084A0CA /* AudioNote */ = {
+			isa = PBXGroup;
+			children = (
+				F1D2E9FF278318020084A0CA /* AudioNoteApp.swift */,
+				F1DAADFB27BA8DC2001EAFD9 /* Extensions */,
+				F114010D27A0283700A8D915 /* Managers */,
+				F1D2EA2F278318780084A0CA /* Models */,
+				F1D2EA2E278318680084A0CA /* Views */,
+				F1D2EA03278318080084A0CA /* Assets.xcassets */,
+				F1D2EA08278318080084A0CA /* Persistence.swift */,
+				F1D2EA0A278318080084A0CA /* AudioNote.xcdatamodeld */,
+				F1D2EA05278318080084A0CA /* Preview Content */,
+			);
+			path = AudioNote;
+			sourceTree = "<group>";
+		};
+		F1D2EA05278318080084A0CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1D2EA06278318080084A0CA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1D2EA14278318080084A0CA /* AudioNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1D2EA15278318080084A0CA /* AudioManagerTests.swift */,
+				F10C1F1A27BE9BDF00985EEA /* NotificationManagerTests.swift */,
+			);
+			path = AudioNoteTests;
+			sourceTree = "<group>";
+		};
+		F1D2EA1E278318080084A0CA /* AudioNoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1D2EA1F278318080084A0CA /* AudioNoteUITests.swift */,
+				F1D2EA21278318080084A0CA /* AudioNoteUITestsLaunchTests.swift */,
+			);
+			path = AudioNoteUITests;
+			sourceTree = "<group>";
+		};
+		F1D2EA2E278318680084A0CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1D2EA01278318020084A0CA /* ContentView.swift */,
+				F151EBF5279052E1002A4517 /* NoteView.swift */,
+				F1D19A0F279D8AB400AEAC09 /* IntensityProgressView.swift */,
+				F166442D279078A7002DA11D /* NoteDetailView.swift */,
+				F1D2EA30278318A00084A0CA /* RecordAudioView.swift */,
+				F11145812785C23D00179FFA /* CreateNoteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1D2EA2F278318780084A0CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1438903278714AB007BE9DA /* NoteManagedObject+.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1DAADFB27BA8DC2001EAFD9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F114010B27A0148700A8D915 /* TimeInterval+.swift */,
+				F1D472D527A85DA50060D782 /* View+.swift */,
+				F13A069827B14E5E00DC8FDE /* Collection+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1D2E9FB278318020084A0CA /* AudioNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D2EA25278318080084A0CA /* Build configuration list for PBXNativeTarget "AudioNote" */;
+			buildPhases = (
+				F1D2E9F8278318020084A0CA /* Sources */,
+				F1D2E9F9278318020084A0CA /* Frameworks */,
+				F1D2E9FA278318020084A0CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioNote;
+			productName = AudioNote;
+			productReference = F1D2E9FC278318020084A0CA /* AudioNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1D2EA10278318080084A0CA /* AudioNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D2EA28278318080084A0CA /* Build configuration list for PBXNativeTarget "AudioNoteTests" */;
+			buildPhases = (
+				F1D2EA0D278318080084A0CA /* Sources */,
+				F1D2EA0E278318080084A0CA /* Frameworks */,
+				F1D2EA0F278318080084A0CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1D2EA13278318080084A0CA /* PBXTargetDependency */,
+			);
+			name = AudioNoteTests;
+			productName = AudioNoteTests;
+			productReference = F1D2EA11278318080084A0CA /* AudioNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1D2EA1A278318080084A0CA /* AudioNoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D2EA2B278318080084A0CA /* Build configuration list for PBXNativeTarget "AudioNoteUITests" */;
+			buildPhases = (
+				F1D2EA17278318080084A0CA /* Sources */,
+				F1D2EA18278318080084A0CA /* Frameworks */,
+				F1D2EA19278318080084A0CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1D2EA1D278318080084A0CA /* PBXTargetDependency */,
+			);
+			name = AudioNoteUITests;
+			productName = AudioNoteUITests;
+			productReference = F1D2EA1B278318080084A0CA /* AudioNoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1D2E9F4278318020084A0CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F1D2E9FB278318020084A0CA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					F1D2EA10278318080084A0CA = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = F1D2E9FB278318020084A0CA;
+					};
+					F1D2EA1A278318080084A0CA = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = F1D2E9FB278318020084A0CA;
+					};
+				};
+			};
+			buildConfigurationList = F1D2E9F7278318020084A0CA /* Build configuration list for PBXProject "AudioNote" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1D2E9F3278318020084A0CA;
+			productRefGroup = F1D2E9FD278318020084A0CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1D2E9FB278318020084A0CA /* AudioNote */,
+				F1D2EA10278318080084A0CA /* AudioNoteTests */,
+				F1D2EA1A278318080084A0CA /* AudioNoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1D2E9FA278318020084A0CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D2EA07278318080084A0CA /* Preview Assets.xcassets in Resources */,
+				F1D2EA04278318080084A0CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D2EA0F278318080084A0CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D2EA19278318080084A0CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1D2E9F8278318020084A0CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1438904278714AB007BE9DA /* NoteManagedObject+.swift in Sources */,
+				F166442E279078A7002DA11D /* NoteDetailView.swift in Sources */,
+				F1D2EA332783221D0084A0CA /* AudioManager.swift in Sources */,
+				F1D19A10279D8AB400AEAC09 /* IntensityProgressView.swift in Sources */,
+				F1D472D627A85DA50060D782 /* View+.swift in Sources */,
+				F1D2EA09278318080084A0CA /* Persistence.swift in Sources */,
+				F11145822785C23D00179FFA /* CreateNoteView.swift in Sources */,
+				F114010F27A0284F00A8D915 /* NotificationManager.swift in Sources */,
+				F1D2EA02278318020084A0CA /* ContentView.swift in Sources */,
+				F1D2EA0C278318080084A0CA /* AudioNote.xcdatamodeld in Sources */,
+				F1D2EA31278318A00084A0CA /* RecordAudioView.swift in Sources */,
+				F13A069927B14E5E00DC8FDE /* Collection+.swift in Sources */,
+				F114010C27A0148700A8D915 /* TimeInterval+.swift in Sources */,
+				F1D2EA00278318020084A0CA /* AudioNoteApp.swift in Sources */,
+				F151EBF6279052E1002A4517 /* NoteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D2EA0D278318080084A0CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10C1F1B27BE9BDF00985EEA /* NotificationManagerTests.swift in Sources */,
+				F1D2EA16278318080084A0CA /* AudioManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D2EA17278318080084A0CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D2EA20278318080084A0CA /* AudioNoteUITests.swift in Sources */,
+				F1D2EA22278318080084A0CA /* AudioNoteUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1D2EA13278318080084A0CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1D2E9FB278318020084A0CA /* AudioNote */;
+			targetProxy = F1D2EA12278318080084A0CA /* PBXContainerItemProxy */;
+		};
+		F1D2EA1D278318080084A0CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1D2E9FB278318020084A0CA /* AudioNote */;
+			targetProxy = F1D2EA1C278318080084A0CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1D2EA23278318080084A0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1D2EA24278318080084A0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1D2EA26278318080084A0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AudioNote/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To record a note, please allow AudioNote to access your microphone";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.AudioNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1D2EA27278318080084A0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AudioNote/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To record a note, please allow AudioNote to access your microphone";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.AudioNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1D2EA29278318080084A0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.AudioNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioNote.app/AudioNote";
+			};
+			name = Debug;
+		};
+		F1D2EA2A278318080084A0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.AudioNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioNote.app/AudioNote";
+			};
+			name = Release;
+		};
+		F1D2EA2C278318080084A0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.AudioNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AudioNote;
+			};
+			name = Debug;
+		};
+		F1D2EA2D278318080084A0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.AudioNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AudioNote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1D2E9F7278318020084A0CA /* Build configuration list for PBXProject "AudioNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D2EA23278318080084A0CA /* Debug */,
+				F1D2EA24278318080084A0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D2EA25278318080084A0CA /* Build configuration list for PBXNativeTarget "AudioNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D2EA26278318080084A0CA /* Debug */,
+				F1D2EA27278318080084A0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D2EA28278318080084A0CA /* Build configuration list for PBXNativeTarget "AudioNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D2EA29278318080084A0CA /* Debug */,
+				F1D2EA2A278318080084A0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D2EA2B278318080084A0CA /* Build configuration list for PBXNativeTarget "AudioNoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D2EA2C278318080084A0CA /* Debug */,
+				F1D2EA2D278318080084A0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1D2EA0A278318080084A0CA /* AudioNote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1D2EA0B278318080084A0CA /* AudioNote.xcdatamodel */,
+			);
+			currentVersion = F1D2EA0B278318080084A0CA /* AudioNote.xcdatamodel */;
+			path = AudioNote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1D2E9F4278318020084A0CA /* Project object */;
+}
