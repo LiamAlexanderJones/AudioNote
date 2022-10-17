@@ -10,12 +10,9 @@ import SwiftUI
 struct IntensityProgressView: View {
   
   @ObservedObject var audioManager: AudioManager
-  static let numberOfBars = 10
-  //number of bars = view width / double bar width
   
   var note: NoteManagedObject
-  @State var barData: [(height: CGFloat, colour: Color)] = Array(repeating: (height: 6, colour: .gray), count: numberOfBars)
-  //Remove?
+  @State var barData: [(height: CGFloat, colour: Color)] = []
   
   var position: Double {
     audioManager.timerOutput / Double(note.duration)
@@ -23,29 +20,32 @@ struct IntensityProgressView: View {
   
   var body: some View {
     GeometryReader { geometry in
-      HStack(alignment: .bottom, spacing: 6) {
+      HStack(alignment: .center, spacing: 6) {
         ForEach(0..<Int(geometry.size.width / 12), id: \.self) { index in
           Capsule()
             .foregroundColor(barData[safe: index]?.colour ?? .gray)
             .frame(width: 6, height: barData[safe: index]?.height ?? 6, alignment: .bottom)
         }
       }
-      .frame(height: geometry.size.height, alignment: .bottom)
+      .frame(height: geometry.size.height, alignment: .center)
       .onChange(of: audioManager.timerOutput) { progress in
-        let i = Int((progress * Double(geometry.size.width / 12) / Double(note.duration)).rounded(.towardZero))
-        
+        guard note.duration > 0 else { return }
+        let normalisedProgress = progress * Double(geometry.size.width / 12) / note.duration
+        guard normalisedProgress.isFinite else { return }
+        let i = Int(normalisedProgress.rounded(.towardZero))
+
         let decibels = audioManager.audioPlayer?.averagePower(forChannel: 0) ?? -160
-        let power = pow(2, decibels / 18) //Normally would be /6
+        let power = pow(2, decibels / 12) //Normally would be /6
         
         //Check bardata[i] exists, and if not, append it
         if barData.count <= i {
-          barData.append((height: CGFloat(power * 20), colour: .gray))
+          barData.append((height: CGFloat(power * 60), colour: .gray))
         } else {
-          barData[i].height = CGFloat(power * 20)
+          barData[i].height = CGFloat(power * 60)
         }
         
         if audioManager.status == .playing {
-          barData[i].colour = .teal
+          barData[i].colour = Color(hue: Double(0.75 - power), saturation: 1, brightness: 0.75)
         }
       }
       .onChange(of: audioManager.status) { status in

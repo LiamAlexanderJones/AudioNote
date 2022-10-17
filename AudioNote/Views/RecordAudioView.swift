@@ -98,6 +98,7 @@ struct RecordAudioView: View {
                 Capsule()
                   .fill(Color.teal)
                   .frame(width: audioManager.duration < 0.2 ? 0 : geometry.size.width * 0.8)
+                  .shadow(color: .black, radius: 1, x: 1, y: 1)
                   .animation(.easeIn, value: audioManager.duration)
               )
           })

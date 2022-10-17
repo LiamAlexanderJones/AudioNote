@@ -50,14 +50,12 @@ struct CreateNoteView: View {
           }
           .tint(.teal)
           if createReminder {
-            DatePicker(selection: $reminderDate, in: Date()...) {
-              Text("select a date")
-            }
+            DatePicker("Select a date", selection: $reminderDate, in: Date()...)
             .datePickerStyle(CompactDatePickerStyle())
-            .animation(.easeIn, value: createReminder)
             Toggle("Repeating reminder", isOn: $notificationRepeats)
               .tint(.teal)
           }
+          
           Spacer()
           Button(action: saveNote, label: {
             Text("Save")
@@ -69,10 +67,13 @@ struct CreateNoteView: View {
                 Capsule()
                   .fill(Color.teal)
                   .frame(width: geometry.size.width * 0.8)
+                  .shadow(color: .black, radius: 1, x: 1, y: 1)
                   .animation(.easeIn, value: audioManager.duration)
               )
           })
+          .padding(.bottom)
         }
+        .frame(minHeight: geometry.size.height - 30)
         .padding(16)
       }
     }

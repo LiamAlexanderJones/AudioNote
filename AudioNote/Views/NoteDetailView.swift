@@ -25,7 +25,7 @@ struct NoteDetailView: View {
   
   var power: Double {
     let db = audioManager.audioPlayer?.averagePower(forChannel: 0) ?? -160
-    return Double(pow(2, db / 18))
+    return Double(pow(2, db / 30))
   }
   
   @ObservedObject var audioManager = AudioManager()
@@ -69,14 +69,18 @@ struct NoteDetailView: View {
                 Image(systemName: audioManager.status == . playing ? "pause" : "play.fill")
                   .resizable()
                   .scaledToFit()
-                  .foregroundColor(.white)
+                  .font(.largeTitle.weight(.black))
+                  .foregroundColor(audioManager.status == . playing ? .orange : .green)
+                  .shadow(color: .black, radius: 1, x: 1, y: 1)
                   .frame(width: 25, height: 25)
-                  .animation(.easeIn, value: audioManager.status)
+                  .animation(.linear, value: audioManager.status)
               })
                 .font(.headline)
-              Spacer()
               Text("\(audioManager.timerOutput.timeDisplay()) / \(note.duration.timeDisplay())")
+                .font(.body.bold())
                 .foregroundColor(.white)
+                .padding(.horizontal)
+              Spacer()
             }
           }
           .padding(5)
@@ -123,7 +127,7 @@ struct NoteDetailView: View {
           .padding(.horizontal, 3)
           .background(
             RoundedRectangle(cornerRadius: 10).fill(Color.white)
-              .shadow(color: .gray, radius: 5, x: 1, y: 1)
+              .shadow(color: .gray, radius: 5, x: 2, y: 2)
           )
           .padding([.horizontal, .bottom], 5)
           
